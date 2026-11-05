@@ -1,6 +1,10 @@
-def my_function(greeting):
-    return greeting
+class Calculator:
 
-
-result = my_function("Hello, World!")
-print(result)
+    def add(self, x, y):
+        return x + y
+    def subtract(self, x, y):
+        return x - y
+    def multiply(self, x, y):
+        return x * y
+    def divide(self, x, y):
+        return "Error: Cannot divide by zero!" if y == 0 else x / y

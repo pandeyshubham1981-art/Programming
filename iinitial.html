@@ -1,21 +1,276 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
-    <body>
-        <button onclick="alert('Hello World')">
-            Click Me 
-        </button>
-    </body>
+<body>
+    <h1>Javascript Variables</h1>
+    <p id="demo"></p>
+    <script>
+        let age = 25;
+        if (age < 18) {
+            document.getElementById("demo").innerHTML = "You are a minor.";
+        } else {
+            document.getElementById("demo").innerHTML = "You are an adult.";
+        }
+    </script>
+</body>
+ 
+</html>
+
+   
+<!Doctype html>
+<html>
+
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let firstName = "John";
+        let lastName = "Doe";
+        name = firstName + " " + lastName;
+        document.getElementById("demo").innerHTML = "Hello, " + name + "! Welcome to my website.";
+    </script>
+</body>
 
 </html>
 
-<!DOCTYPE html>
-<html>
-    <body>
-        <h1 id="demo" >Hello</h1>
 
-        <script>
-            document.getElementById("demo").innerHTML =
-            "Welcome to JavaScript!";
-        </script>
-    </body>
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = text.length;
+        document.getElementById("demo").innerHTML = "The length of the text is " + length;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let text = "Hello, World!";
+        let char = text.charCodeAt(0);
+        document.getElementById("demo").innerHTML = char;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let name = "John Doe";
+        letter = name[2];
+        document.getElementById("demo").innerHTML = "The third letter of the name is " + letter;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        text = "Hello".concat(" ", "World!");
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        let res = str.slice(7, 13);
+        document.getElementById("demo").innerHTML = res;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        let res = str.substring(7, 13);
+        document.getElementById("demo").innerHTML = res;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        let res = str.substr(7, 6);
+        document.getElementById("demo").innerHTML = res;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        let part = str.substr(-4);
+        document.getElementById("demo").innerHTML = part;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let text1 = "hello world";
+        let text2 = text1.toUpperCase();
+        document.getElementById("demo").innerHTML = text2;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let text1 = "    hello world    ";
+        let text2 = text1.trim();
+        document.getElementById("demo").innerHTML = text2;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let text1 = "    hello world    ";
+        let text2 = text1.trimEnd();
+        document.getElementById("demo").innerHTML = text2;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        let text = "please visit Microsoft!";
+        let text2 = text.replace("Microsoft", "Hello");
+        document.getElementById("demo").innerHTML = text2;
+    </script>
+</body>
+
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p id="demo"></p>
+    <script>
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        let result = multiply(4, 5);
+        document.getElementById("demo").innerHTML = "The result of multiplication is: " + result;
+    </script>
+</body>
+
+</html>
+
+ 
+
+
+
+
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <h2>JavaScript Functions</h2>
+    <p>The length property returns the length of an array:</p>
+
+    <p id="demo"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        size = fruits.length;
+        document.getElementById("demo").innerHTML = size;
+    </script>
+</body> 
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <h2>JavaScript Functions</h2>
+    <p>The length property returns the length of an array:</p>
+
+    <p id="demo"></p>
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.length = 2;
+        document.getElementById("demo").innerHTML = fruits;
+    </script> 
+</body> 
+</html>
+
+<!Doctype html>
+<html>
+<body>
+    <h1>Welcome to My Website</h1>
+    <h2>JavaScript Functions</h2>
+    <p>The length property returns the length of an array:</p>
+
+    <p id="demo"></p>
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            address:"Phagwara",
+            fullName
+        }
+    </script> 
+</body> 
 </html>
